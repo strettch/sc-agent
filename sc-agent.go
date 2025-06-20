@@ -88,7 +88,7 @@ func notifyHandler(w http.ResponseWriter, r *http.Request) {
 
 func fetchPublicKeyFromResourceManager(sessionID string) (string, error) {
 	// TODO: Make resource manager URL configurable
-	url := fmt.Sprintf("https://cf37-2c0f-eb68-65a-ca00-4486-1923-f9cd-7add.ngrok-free.app/api/v1/console/public-key?session_id=%s", sessionID)
+	url := fmt.Sprintf("https://d834-102-22-169-25.ngrok-free.app/api/v1/console/public-key?session_id=%s", sessionID)
 	resp, err := http.Get(url)
 	if err != nil {
 		return "", err
