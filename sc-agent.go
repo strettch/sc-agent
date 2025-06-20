@@ -13,7 +13,7 @@ import (
 
 var (
 	mu         sync.Mutex
-	backendURL string = "https://cf37-2c0f-eb68-65a-ca00-4486-1923-f9cd-7add.ngrok-free.app/api/v1/"
+	backendURL string = "https://d834-102-22-169-25.ngrok-free.app/api/v1/"
 )
 
 func init() {
