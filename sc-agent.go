@@ -13,7 +13,7 @@ import (
 
 var (
 	mu         sync.Mutex
-	backendURL string = "https://d834-102-22-169-25.ngrok-free.app/api/v1/"
+	backendURL string = "https://f10b-105-179-8-146.ngrok-free.app/api/v1/"
 )
 
 func init() {
@@ -88,7 +88,7 @@ func notifyHandler(w http.ResponseWriter, r *http.Request) {
 
 func fetchPublicKeyFromResourceManager(sessionID string) (string, error) {
 	// TODO: Make resource manager URL configurable
-	url := fmt.Sprintf("https://d834-102-22-169-25.ngrok-free.app/api/v1/console/public-key?session_id=%s", sessionID)
+	url := fmt.Sprintf("https://f10b-105-179-8-146.ngrok-free.app/api/v1/console/public-key?session_id=%s", sessionID)
 	resp, err := http.Get(url)
 	if err != nil {
 		return "", err
